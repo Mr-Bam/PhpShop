@@ -28,7 +28,7 @@ class User
         $result->bindParam(':email', $email, PDO::PARAM_STR);
         $result->bindParam(':password', $password, PDO::PARAM_STR);
         
-        return $result->execute()or die('error');
+        return $result->execute();
     }
 
     /**
